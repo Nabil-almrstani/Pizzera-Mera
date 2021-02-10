@@ -1,0 +1,31 @@
+footer{
+  width: 100%;
+  background-color: #233442;
+  height: 25vh;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo1{
+    img{
+      margin-bottom: 2rem;
+    }
+  }
+  .ul1{
+    padding-right: 9rem;
+
+    li{
+      padding-bottom: 2rem;
+    }
+  }
+  .ul2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    li{
+      &:not(:last-child){
+        padding-right: 2rem;
+      }
+    }
+  }
+}

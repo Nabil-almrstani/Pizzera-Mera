@@ -1,0 +1,35 @@
+.info {
+  color: black;
+  padding: 2rem 2rem;
+  .text-section{
+    ul{
+      display:flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      li{
+        max-width: 33%;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content:center;
+        img{
+          margin-right: 2rem;
+        }
+        .text{
+          h1{
+            padding-bottom: .5rem;
+          }
+          p{
+            opacity: .75;
+          }
+        }
+      }
+    }
+  }
+  .map{
+    margin-top:2rem;
+    display:flex;
+    justify-content:center;
+    
+  }
+}

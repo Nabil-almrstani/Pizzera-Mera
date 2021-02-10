@@ -1,0 +1,41 @@
+.über-uns {
+  color: black;
+  margin: 2rem 2rem;
+  background-color: #f4efe6 !important;
+  position: relative;z-index: -1;
+  height:100%;
+  .über {
+    width: 220px;
+    height: 40px;
+    background-color: #da9d66;
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform:translate(-50%, 0);
+    z-index: -1;
+  }
+  h1 {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 4rem;
+    z-index: 1;
+  }
+}
+.secnd{
+  display: flex;
+  justify-content: center;
+  margin:0 5% 0 10%;
+  padding-top:2rem;
+  p{
+    font-size:2.5rem ;
+    // width: 50%;
+    padding-left: 4rem;
+    max-width: 600px;
+  }
+  img {
+    height: fit-content;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    
+  }
+}
