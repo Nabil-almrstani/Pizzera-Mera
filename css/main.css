@@ -116,7 +116,7 @@ footer .ul2 li:not(:last-child) {
   display: grid;
   width: 100%;
   height: 80vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
   padding: 2rem 2rem;
   gap: 2rem;
@@ -181,6 +181,30 @@ footer .ul2 li:not(:last-child) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box-7 {
+  background-position: center;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/appetizer-1386743_1920.jpg);
+}
+
+.box-8 {
+  background-position: bottom;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/strawberry-cake-3411540_1920.jpg);
+}
+
+.box-9 {
+  background-position: center center;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/beef-tongue-5143857_1920.jpg);
+}
+
+.box-9 h1 {
+  font-size: 3rem;
+}
+
+.box-10 {
+  background-position: bottom;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/soup-2538888_1920.jpg);
 }
 
 .über-uns {
@@ -274,6 +298,18 @@ footer .ul2 li:not(:last-child) {
     width: auto;
     font-size: 3rem;
   }
+  .grid-menu {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 33.3%);
+    padding: 2rem 2rem;
+    gap: 2rem;
+  }
+  .box-10 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 858px) {
@@ -294,11 +330,17 @@ footer .ul2 li:not(:last-child) {
   .grid-menu {
     display: grid;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: repeat(5, 20%);
     padding: 2rem 2rem;
     gap: 2rem;
+  }
+  .box-10 {
+    display: block;
+  }
+  .über-uns {
+    margin-top: 7rem;
   }
 }
 
@@ -445,6 +487,9 @@ footer .ul2 li:not(:last-child) {
     padding-right: 0 !important;
     margin-bottom: 1rem;
   }
+  .box-7 h1, .box-8 h1 {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 456px) {
@@ -496,14 +541,26 @@ footer .ul2 li:not(:last-child) {
   .grid-menu {
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 16.6%);
+    grid-template-rows: repeat(10, 15%);
     padding: 2rem 2rem;
     gap: 2rem;
   }
   .über-uns {
-    margin-top: 10rem;
+    margin-top: 50rem;
+  }
+  .btns {
+    position: absolute;
+    top: 70% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-1 h1 {
+    font-size: 3rem;
+  }
+  .box-10 {
+    display: none;
   }
 }
 
