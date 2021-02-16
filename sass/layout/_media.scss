@@ -63,6 +63,16 @@
   .logo {
     padding-left: 4rem;
   }
+  .box-6 {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .box-9 {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
   .navbar {
     // align-items:center;
     position: relative;
@@ -223,7 +233,7 @@
     width: 100% !important;
     max-width: 90% !important;
   }
-  .box-3 {
+  .box-3, .box-9, .box-6 {
     h1 {
       font-size: 3rem;
     }

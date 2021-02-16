@@ -181,6 +181,7 @@ footer .ul2 li:not(:last-child) {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
 }
 
 .box-7 {
@@ -199,7 +200,7 @@ footer .ul2 li:not(:last-child) {
 }
 
 .box-9 h1 {
-  font-size: 3rem;
+  font-size: 2.9rem;
 }
 
 .box-10 {
@@ -285,9 +286,9 @@ footer .ul2 li:not(:last-child) {
 }
 
 .info .map {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
+  padding-top: 4rem;
+  margin: 0 auto;
+  width: 90%;
 }
 
 @media screen and (max-width: 1117px) {
@@ -350,6 +351,12 @@ footer .ul2 li:not(:last-child) {
   }
   .logo {
     padding-left: 4rem;
+  }
+  .box-6 h1 {
+    font-size: 2.5rem;
+  }
+  .box-9 h1 {
+    font-size: 2.2rem;
   }
   .navbar {
     position: relative;
@@ -497,7 +504,7 @@ footer .ul2 li:not(:last-child) {
     width: 100% !important;
     max-width: 90% !important;
   }
-  .box-3 h1 {
+  .box-3 h1, .box-9 h1, .box-6 h1 {
     font-size: 3rem;
   }
   .secnd img {
