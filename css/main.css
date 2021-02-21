@@ -12,7 +12,7 @@ html {
 body {
   font-size: 1.6rem;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 *::selection {
@@ -39,27 +39,54 @@ a {
   text-align: center;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.72);
 }
+.text-1 h1 {
+  animation: ok 2s ease-in-out;
+}
 
+.text1 h1 {
+  animation: ok 1s ease-in-out;
+}
+
+@keyframes ok {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btns {
+  animation: slide-in-blurred-bottom 1s ease-out both;
+}
+
+@keyframes slide-in-blurred-bottom {
+  0% {
+    transform: translate(-50%, 1000%) scaleY(1) scaleX(1);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -70%) scaleY(1) scaleX(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .navbar ul li {
   list-style-type: none;
 }
-
 .navbar ul li:not(:last-child) {
   padding-right: 3rem;
 }
-
 .navbar ul li a {
   text-decoration: none;
   color: white;
@@ -89,25 +116,20 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-
 footer .logo1 img {
   margin-bottom: 2rem;
 }
-
 footer .ul1 {
   padding-right: 9rem;
 }
-
 footer .ul1 li {
   padding-bottom: 2rem;
 }
-
 footer .ul2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 footer .ul2 li:not(:last-child) {
   padding-right: 2rem;
 }
@@ -127,9 +149,8 @@ footer .ul2 li:not(:last-child) {
   background-size: cover;
   position: relative;
   letter-spacing: 2px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 .box h1 {
   font-size: 4rem;
   position: absolute;
@@ -137,10 +158,9 @@ footer .ul2 li:not(:last-child) {
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.68);
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: "Yusei Magic", sans-serif;
   text-transform: uppercase;
 }
-
 .box:hover {
   transform: translateY(-10px);
   box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.6);
@@ -148,34 +168,33 @@ footer .ul2 li:not(:last-child) {
 
 .box-1 {
   background-position: right center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/pizza.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/pizza.jpg);
 }
 
 .box-2 {
   background-position: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/salat.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/salat.jpg);
 }
 
 .box-3 {
   background-position: left center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/drinks.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/drinks.jpg);
 }
 
 .box-4 {
   background-position: bottom;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/pasta.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/pasta.jpg);
 }
 
 .box-5 {
   background-position: bottom;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/burger.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/burger.jpg);
 }
 
 .box-6 {
   background-position: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/seafood.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/seefood.jpg);
 }
-
 .box-6 h1 {
   width: 100%;
   display: flex;
@@ -186,26 +205,25 @@ footer .ul2 li:not(:last-child) {
 
 .box-7 {
   background-position: center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/appetizer-1386743_1920.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/appetizer-1386743_1920.jpg);
 }
 
 .box-8 {
   background-position: bottom;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/strawberry-cake-3411540_1920.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/strawberry-cake-3411540_1920.jpg);
 }
 
 .box-9 {
   background-position: center center;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/beef-tongue-5143857_1920.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/beef-tongue-5143857_1920.jpg);
 }
-
 .box-9 h1 {
   font-size: 2.9rem;
 }
 
 .box-10 {
   background-position: bottom;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/soup-2538888_1920.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/soup-2538888_1920.jpg);
 }
 
 .über-uns {
@@ -216,7 +234,6 @@ footer .ul2 li:not(:last-child) {
   z-index: -1;
   height: 100%;
 }
-
 .über-uns .über {
   width: 220px;
   height: 40px;
@@ -227,7 +244,6 @@ footer .ul2 li:not(:last-child) {
   transform: translate(-50%, 0);
   z-index: -1;
 }
-
 .über-uns h1 {
   padding: 2rem 0;
   text-align: center;
@@ -241,13 +257,11 @@ footer .ul2 li:not(:last-child) {
   margin: 0 5% 0 10%;
   padding-top: 2rem;
 }
-
 .secnd p {
   font-size: 2.5rem;
   padding-left: 4rem;
   max-width: 600px;
 }
-
 .secnd img {
   height: fit-content;
   padding-right: 2rem;
@@ -258,13 +272,11 @@ footer .ul2 li:not(:last-child) {
   color: black;
   padding: 2rem 2rem;
 }
-
 .info .text-section ul {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-
 .info .text-section ul li {
   max-width: 33%;
   list-style: none;
@@ -272,19 +284,15 @@ footer .ul2 li:not(:last-child) {
   align-items: flex-start;
   justify-content: center;
 }
-
 .info .text-section ul li img {
   margin-right: 2rem;
 }
-
 .info .text-section ul li .text h1 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
-
 .info .text-section ul li .text p {
-  opacity: .75;
+  opacity: 0.75;
 }
-
 .info .map {
   padding-top: 4rem;
   margin: 0 auto;
@@ -295,10 +303,12 @@ footer .ul2 li:not(:last-child) {
   .text-1 h1 {
     font-size: 4rem;
   }
+
   .box-6 h1 {
     width: auto;
     font-size: 3rem;
   }
+
   .grid-menu {
     display: grid;
     width: 100%;
@@ -308,26 +318,29 @@ footer .ul2 li:not(:last-child) {
     padding: 2rem 2rem;
     gap: 2rem;
   }
+
   .box-10 {
     display: none;
   }
 }
-
 @media screen and (max-width: 858px) {
   .btns {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .secnd img {
     height: 30rem;
   }
   .secnd p {
     font-size: 1.7rem;
   }
+
   .text-section {
     font-size: 1rem;
   }
+
   .grid-menu {
     display: grid;
     width: 100%;
@@ -337,27 +350,32 @@ footer .ul2 li:not(:last-child) {
     padding: 2rem 2rem;
     gap: 2rem;
   }
+
   .box-10 {
     display: block;
   }
+
   .über-uns {
     margin-top: 7rem;
   }
 }
-
 @media screen and (max-width: 697px) {
   header {
     padding: 2rem 0 !important;
   }
+
   .logo {
     padding-left: 4rem;
   }
+
   .box-6 h1 {
     font-size: 2.5rem;
   }
+
   .box-9 h1 {
     font-size: 2.2rem;
   }
+
   .navbar {
     position: relative;
   }
@@ -393,7 +411,7 @@ footer .ul2 li:not(:last-child) {
     pointer-events: all;
   }
   .navbar .line {
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   .navbar .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -423,15 +441,18 @@ footer .ul2 li:not(:last-child) {
   .navbar a {
     white-space: nowrap !important;
   }
+
   .text-1 h1 {
     font-size: 3.3rem;
   }
+
   .btns {
     position: absolute;
     top: 60% !important;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .secnd {
     flex-direction: column;
     justify-content: flex-start;
@@ -445,6 +466,7 @@ footer .ul2 li:not(:last-child) {
     padding-left: 0;
     padding-bottom: 1rem;
   }
+
   .text-section ul {
     flex-direction: column;
     justify-content: flex-start !important;
@@ -464,18 +486,21 @@ footer .ul2 li:not(:last-child) {
   .text-section ul li p {
     font-size: 1.4rem !important;
   }
+
   footer {
     padding: 2rem;
   }
   footer p {
     max-width: 16rem;
   }
+
   .ul1 {
     padding-right: 9rem;
   }
   .ul1 li {
     padding-bottom: 2rem;
   }
+
   .ul2 {
     display: flex;
     justify-content: center;
@@ -484,9 +509,11 @@ footer .ul2 li:not(:last-child) {
   .ul2 li:not(:last-child) {
     padding-right: 2rem;
   }
+
   .ul1 {
     padding: 0 1rem !important;
   }
+
   .ul2 {
     flex-direction: column;
   }
@@ -494,22 +521,25 @@ footer .ul2 li:not(:last-child) {
     padding-right: 0 !important;
     margin-bottom: 1rem;
   }
+
   .box-7 h1, .box-8 h1 {
     font-size: 3rem;
   }
 }
-
 @media screen and (max-width: 456px) {
   .text-1 {
     width: 100% !important;
     max-width: 90% !important;
   }
+
   .box-3 h1, .box-9 h1, .box-6 h1 {
     font-size: 3rem;
   }
+
   .secnd img {
     height: 80vw;
   }
+
   footer {
     height: fit-content;
     flex-wrap: wrap;
@@ -527,24 +557,29 @@ footer .ul2 li:not(:last-child) {
   footer .ul2 li {
     margin-right: 2rem;
   }
+
   .map {
     width: 100%;
   }
+
   .btns {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .btn-1 {
     margin-top: 10rem !important;
     margin-right: 0rem !important;
     width: 60% !important;
   }
+
   .btn-2 {
     margin-top: 2rem !important;
     margin-left: 0rem !important;
     width: 60% !important;
   }
+
   .grid-menu {
     display: grid;
     width: 100%;
@@ -554,23 +589,26 @@ footer .ul2 li:not(:last-child) {
     padding: 2rem 2rem;
     gap: 2rem;
   }
+
   .über-uns {
     margin-top: 50rem;
   }
+
   .btns {
     position: absolute;
     top: 70% !important;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   .text-1 h1 {
     font-size: 3rem;
   }
+
   .box-10 {
     display: none;
   }
 }
-
 .btns {
   position: absolute;
   top: 63%;
@@ -579,8 +617,8 @@ footer .ul2 li:not(:last-child) {
 }
 
 .gld-button {
-  border-radius: .8rem !important;
-  font-family: 'Montserrat', sans-serif;
+  border-radius: 0.8rem !important;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-1 {
@@ -651,7 +689,7 @@ footer .ul2 li:not(:last-child) {
   left: 0;
   z-index: 999997;
   background-color: rgba(0, 0, 0, 0);
-  transition: background-color .15s linear;
+  transition: background-color 0.15s linear;
 }
 
 .gld-backdrop-visible {
@@ -673,7 +711,7 @@ footer .ul2 li:not(:last-child) {
   box-sizing: border-box;
   border: solid 15px rgba(255, 255, 255, 0.2);
   border-top-color: #fff;
-  animation: gld -spin 1s infinite linear;
+  animation: gld -spin 1s infinite linear;
   transform-origin: 50%;
 }
 
@@ -682,6 +720,4 @@ footer .ul2 li:not(:last-child) {
     transform: rotate(360deg);
   }
 }
-
-/** DYNAMIC - END **/
-/*# sourceMappingURL=main.css.map */
+/** DYNAMIC - END **//*# sourceMappingURL=main.css.map */
